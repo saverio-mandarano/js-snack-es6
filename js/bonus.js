@@ -78,7 +78,10 @@ for (const zucchina of zucchine) {
     }
 }
 
+console.log(`smallZucchine:`);
 console.log(smallZucchine);
+
+console.log(`bigZucchine:`)
 console.log(bigZucchine);
 
 
