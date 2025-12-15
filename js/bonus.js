@@ -1,6 +1,6 @@
 // BONUS 
  
-// Crea 10 oggetti che rappresentano una zucchina.,
+// Crea 10 oggetti che rappresentano una zucchina.
 const zucchine = [
     
     { 
@@ -64,5 +64,27 @@ const zucchine = [
     }
 ];
 
-// Dividi in due array separati le zucchine che misurano meno o più di 15cm.,
+
+// Dividi in due array separati le zucchine che misurano meno o più di 15cm.
+const smallZucchine = [];
+const bigZucchine = [];
+for (const zucchina of zucchine) {
+
+    if (zucchina.lunghezza >= 15) {
+        bigZucchine.push(zucchina);
+    }
+    else{
+        smallZucchine.push(zucchina);
+    }
+}
+
+console.log(smallZucchine);
+console.log(bigZucchine);
+
+
+
+
+
+
+
 // Infine stampa separatamente quanto pesano i due gruppi di zucchine.,
