@@ -32,8 +32,19 @@ const uefaGroupI = [
 ];
 
 
+// Functions
+
+//Genera intero random nell'internvallo [min, max]. 
+function getRandomIntInclusive(min, max) { 
+  const minCeiled = Math.ceil(min); 
+  const maxFloored = Math.floor(max); 
+  return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
+}
+
+
 
 
 
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+
