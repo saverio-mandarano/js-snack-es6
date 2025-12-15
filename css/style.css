@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout */
+body {
+  background-image: url("../img/moon-2048727_1920.jpg");
+  background-size: cover;
+}

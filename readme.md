@@ -1,0 +1,42 @@
+# Snack 1
+
+### Descrizione:
+
+Creare un array di oggetti:
+
+Ogni oggetto descriverà una bici da corsa con le seguenti proprietà:
+
+- nome
+- peso
+
+Stampare a schermo la bici con peso minore.
+
+<!-- ![Alt text dell’immagine](img/screenshot-project.png) -->
+
+# Snack2
+
+### Descrizione:
+
+Creare un array di oggetti di squadre di calcio.
+
+Ogni squadra avrà diverse proprietà:
+
+- nome
+- punti fatti
+- falli subiti
+
+Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
+
+Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
+
+Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+
+### BONUS
+
+Crea 10 oggetti che rappresentano una zucchina.
+Dividi in due array separati le zucchine che misurano meno o più di 15cm.
+Infine stampa separatamente quanto pesano i due gruppi di zucchine.
+
+### NOTE
+
+NON usate cicli/metodi di JS avanzati (filter, map, o simili), li vedremo a parte e così vi sforzate ad usare la logica.
