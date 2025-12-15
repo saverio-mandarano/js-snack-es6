@@ -41,10 +41,17 @@ function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
 }
 
-
-
-
-
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
+for (const team of uefaGroupI) {
+    const randomPoints = getRandomIntInclusive(0, 24);
+    team.points = randomPoints;
+
+    const randomFoulsSuffered = getRandomIntInclusive(0, 240);
+    team.foulsSuffered = randomFoulsSuffered;
+
+}
+
+
+
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
