@@ -56,11 +56,17 @@ const bikeObjects = [
 ];
 
 // Stampare a schermo la bici con peso minore.
-let lightestBike = bikeObjects[0];
+let minWeight = bikeObjects[0].weight;
+let lightestBikes = [];
+
 for (const bike of bikeObjects) {
 
-    if (bike.weight < lightestBike.weight) {
-        lightestBike = bike;
+    if (bike.weight < minWeight) {
+        minWeight = bike.weight;
+        lightestBikes = [bike]; // se trovo un nuovo minimo resetto l'array.
+    }
+    else if (bike.weight === minWeight){
+        lightestBikes.push(bike); // se trovo una bici con lo stesso peso minimo, la aggiungo all'array.
     }
 
     console.log(bike.name, bike.weight);
