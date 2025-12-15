@@ -73,4 +73,9 @@ for (const bike of bikeObjects) {
     
 }
 
-console.log("Lightest bike name:", lightestBike.name, ", Lightest bike weight:", lightestBike.weight, "kg");
+// Stampare a schermo la bici con peso minore.
+
+console.log("Lightest bikes:");
+for(const bike of lightestBikes) {
+    console.log(bike.name, bike.weight);
+}
