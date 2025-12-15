@@ -1,3 +1,5 @@
+![Alt text dell’immagine](img/background.webp)
+
 # Snack 1
 
 ### Descrizione:
@@ -38,5 +40,3 @@ Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 ### NOTE
 
 NON usate cicli/metodi di JS avanzati (filter, map, o simili), li vedremo a parte e così vi sforzate ad usare la logica.
-
-![Alt text dell’immagine](img/background.webp)
