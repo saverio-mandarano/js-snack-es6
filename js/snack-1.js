@@ -5,53 +5,66 @@
 const bikeObjects = [
     
     { 
-        nome: `Trek Domane SL 6`, 
-        peso: 8.9 
+        name: `Trek Domane SL 6`, 
+        weight: 8.9 
     },
     
     { 
-        nome: `Specialized Rockhopper`, 
-        peso: 13.2 
+        name: `Specialized Rockhopper`, 
+        weight: 13.2 
     },
     
     { 
-        nome: `Cannondale Trail 5`, 
-        peso: 13.5 
+        name: `Cannondale Trail 5`, 
+        weight: 13.5 
     },
     
     { 
-        nome: `Bianchi Oltre XR4`, 
-        peso: 6.8 
+        name: `Bianchi Oltre XR4`, 
+        weight: 6.8 
     },
     
     { 
-        nome: `Giant Talon 2`, 
-        peso: 13.0 
+        name: `Giant Talon 2`, 
+        weight: 13.0 
     },
     
     { 
-        nome: `Scott Spark 970`, 
-        peso: 12.6 
+        name: `Scott Spark 970`, 
+        weight: 12.6 
     },
     
     { 
-        nome: `Cube Reaction Pro`, 
-        peso: 11.9 
+        name: `Cube Reaction Pro`, 
+        weight: 11.9 
     },
     
     { 
-        nome: `Orbea Orca M30`, 
-        peso: 8.4 
+        name: `Orbea Orca M30`, 
+        weight: 8.4 
     },
     
     { 
-        nome: `Santa Cruz Hightower`, 
-        peso: 14.2 
+        name: `Santa Cruz Hightower`, 
+        weight: 14.2 
     },
     
     { 
-        nome: `Pinarello Dogma F`, 
-        peso: 6.8 
+        name: `Pinarello Dogma F`, 
+        weight: 6.8 
     }
 ];
 
+// Stampare a schermo la bici con peso minore.
+let lightestBike = bikeObjects[0];
+for (const bike of bikeObjects) {
+
+    if (bike.weight < lightestBike.weight) {
+        lightestBike = bike;
+    }
+
+    console.log(bike.name, bike.weight);
+    
+}
+
+console.log("Lightest bike name:", lightestBike.name, ", Lightest bike weight:", lightestBike.weight, "kg");
