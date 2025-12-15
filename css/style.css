@@ -5,7 +5,9 @@
 }
 
 /* Layout */
-/* body {
-  background-image: url("../img/moon-2048727_1920.jpg");
+body {
+  background-image: url("../img/background.webp");
   background-size: cover;
-} */
+  background-position: 50%;
+  min-height: 100vh;
+}
