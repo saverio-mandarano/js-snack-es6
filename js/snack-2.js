@@ -50,8 +50,10 @@ for (const team of uefaGroupI) {
         foulsSuffered: team.foulsSuffered
     });
 }
-
+console.log(`Gruppo I qualificazioni Uefa 2026, nome-punti-falli subiti:`);
 console.log(uefaGroupI);
+
+console.log(`Gruppo I qualificazioni Uefa 2026, nome-falli subiti:`);
 console.log(GroupIFoulsSuffered);
 
 
