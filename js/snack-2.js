@@ -51,6 +51,7 @@ for (const team of uefaGroupI) {
     });
 }
 
+console.log(uefaGroupI);
 console.log(GroupIFoulsSuffered);
 
 
