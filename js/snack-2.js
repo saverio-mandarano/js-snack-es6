@@ -33,6 +33,9 @@ const uefaGroupI = [
 
 
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
+// Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+const GroupIFoulsSuffered = [];
+
 for (const team of uefaGroupI) {
     const randomPoints = getRandomIntInclusive(0, 24); 
     team.points = randomPoints;
@@ -40,9 +43,15 @@ for (const team of uefaGroupI) {
     const randomFoulsSuffered = getRandomIntInclusive(0, 240); 
     team.foulsSuffered = randomFoulsSuffered;
 
-    console.log(team.points, team.foulsSuffered);
+    // console.log(team.points, team.foulsSuffered);
+
+    GroupIFoulsSuffered.push({
+        name: team.name,
+        foulsSuffered: team.foulsSuffered
+    });
 }
 
+console.log(GroupIFoulsSuffered);
 
 
 // Functions
@@ -53,10 +62,3 @@ function getRandomIntInclusive(min, max) {
   const maxFloored = Math.floor(max); 
   return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
 }
-
-
-
-
-
-// Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
-
